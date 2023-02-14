@@ -17,7 +17,7 @@ public static void main(String[] args) {
 
 
 }
-//funcion para comprobar contraseñas
+//funcion para comprobar contraseñas teniendo en cuenta mayusculas y todo
 	static boolean passwordValido() {
 		boolean passwordOk;
 		
@@ -38,7 +38,8 @@ public static void main(String[] args) {
 		}
 	return passwordOk;
 }
-	//funcion para comprobar cadenas de texto ignorando mayusculas
+	
+//funcion para comprobar cadenas de texto ignorando mayusculas(pero tiene en cuenta acentos)
 		static boolean nombreValido() {
 			boolean nombreOk;
 			
@@ -46,9 +47,8 @@ public static void main(String[] args) {
 			String nombre1= entrada.nextLine();
 			System.out.println("Vuelva a escribir su nombre");
 			String nombre2= entrada.nextLine();
-			
 			if (nombre1.equalsIgnoreCase(nombre2)== true) {
-				System.out.println("Nombre correcta");
+				System.out.println("Nombre correcto");
 				nombreOk = true;
 					  
 			}else {
